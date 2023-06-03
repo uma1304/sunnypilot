@@ -203,10 +203,8 @@ class CarController:
     self.target_speed = self.init_speed
     self.speed_diff = self.target_speed - self.v_set_dis
     if self.target_speed > self.v_set_dis:
-      return 1
       self.button_type = 1
     elif self.target_speed < self.v_set_dis and self.v_set_dis > self.v_cruise_min:
-      return 2
       self.button_type = 2
     return None
 
